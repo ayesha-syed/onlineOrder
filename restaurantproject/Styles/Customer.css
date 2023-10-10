@@ -1,0 +1,44 @@
+﻿body {
+    background-color: #ECFFFF;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    display: flex;
+}
+
+h1 {
+    color: white;
+    text-shadow: 2px 4px 4px rgba(46,91,173,0.6);
+    width: 50%;
+}
+
+p {
+    color: red;
+}
+.table-bordered th,
+.table-bordered td {
+    border: 1px solid #dddddd; /* Add borders to table header and data cells */
+    padding: 8px;
+    box-shadow: 10px 10px 5px lightblue;
+}
+
+/* Optional: Add some styling to the table header (th) */
+.table-bordered th {
+    background-color: #f2f2f2; /* Add a background color */
+    text-align: center; /* Center align the header text */
+}
+#form1 {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+/* Add custom CSS for coloring GridView cells */
+.gridview-cell {
+    background-color: white; /* Change this to the color you want */
+    color: black; /* Change the text color if needed */
+}
+
