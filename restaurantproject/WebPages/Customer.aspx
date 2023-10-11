@@ -41,21 +41,22 @@
         <asp:BoundField DataField="customer_address" HeaderText="Address" ItemStyle-CssClass="gridview-cell" />
          <asp:BoundField DataField="customer_email" HeaderText="Email" ItemStyle-CssClass="gridview-cell"/>
         <asp:BoundField DataField="customer_phone" HeaderText="Phone" ItemStyle-CssClass="gridview-cell"/>
-        <asp:TemplateField HeaderText="Actions" ItemStyle-CssClass="gridview-cell">
-            <ItemTemplate>
-                <asp:Button ID="btnDeleteCustomer" runat="server" CommandName="DeleteCustomer" CommandArgument='<%# Eval("customer_id") %>' Text="Delete" />
-            </ItemTemplate>
-        </asp:TemplateField>
+                                <asp:TemplateField HeaderText="Actions" ItemStyle-CssClass="gridview-cell">
+    <ItemTemplate>
+     <asp:Button ID="btnViewOrd" runat="server" CommandName="ViewOrd" CommandArgument='<%# Eval("customer_id") %>' Text="View Orders" />
+    </ItemTemplate>
+</asp:TemplateField>
         <asp:TemplateField HeaderText="Actions" ItemStyle-CssClass="gridview-cell">
     <ItemTemplate>
       <asp:Button ID="btnEditCustomer" runat="server" CommandName="UpdateCustomer" CommandArgument='<%# Eval("customer_id") %>' Text="Edit" />
     </ItemTemplate>
 </asp:TemplateField>
-                        <asp:TemplateField HeaderText="Actions" ItemStyle-CssClass="gridview-cell">
-    <ItemTemplate>
-     <asp:Button ID="btnViewOrd" runat="server" CommandName="ViewOrd" CommandArgument='<%# Eval("customer_id") %>' Text="View Orders" />
-    </ItemTemplate>
-</asp:TemplateField>
+
+                <asp:TemplateField HeaderText="Actions" ItemStyle-CssClass="gridview-cell">
+            <ItemTemplate>
+                <asp:Button ID="btnDeleteCustomer" runat="server" CommandName="DeleteCustomer" CommandArgument='<%# Eval("customer_id") %>' Text="Delete" />
+            </ItemTemplate>
+        </asp:TemplateField>
                 <%--<asp:TemplateField HeaderText="Actions" ItemStyle-CssClass="gridview-cell">
     <ItemTemplate>
      <asp:Button ID="btnView" runat="server" CommandName="ViewCustomerOrder" CommandArgument='<%# Eval("customer_id") %>' Text="View Orders" />

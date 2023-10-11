@@ -46,11 +46,16 @@ namespace restaurantproject.WebPages
            //lblName = orderDetails.order_id;
    
             orderDetails.CreateOrderDetails(connectionString, orderDetails);
-            Response.Redirect("OrderDetails.aspx");
+            //Response.Redirect("OrderDetails.aspx");
+            Response.Redirect("ViewOrder.aspx?order_id=" + order_id);
         }
         protected void btnCancel_Click(object sender, EventArgs e)
         {
-            Response.Redirect("OrderDetails.aspx");
+            //Response.Redirect("OrderDetails.aspx");
+            OrderDetails orderDetails = new OrderDetails();
+            orderDetails.CreateOrderDetails(connectionString, orderDetails);
+            string order_id = Request["order_id"].ToString();
+            Response.Redirect("ViewOrder.aspx?order_id=" + order_id);
         }
 
 

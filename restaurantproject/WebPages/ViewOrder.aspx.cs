@@ -40,6 +40,12 @@ namespace restaurantproject.WebPages
             Response.Redirect("AddOrderDetails.aspx?order_id=" + order_id);
         }
 
+        //protected void btnBack_Click(object sender, EventArgs e)
+        //{
+        //    string order_id = Request["order_id"].ToString();
+        //    Response.Redirect("AllOrders.aspx?customer_id=" + customer_id);
+        //}
+
         //protected void gridViewOrderList_RowCommand(object sender, GridViewCommandEventArgs e)
         //{
         //    if (e.CommandName == "DeleteOrderDetails")
